@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:movies_ca/movies/presentation/screens/movies_screen.dart';
 
-void main() {}
+void main() {
+  runApp(const MoviesApp());
+}
 
 class MoviesApp extends StatelessWidget {
   const MoviesApp({super.key});

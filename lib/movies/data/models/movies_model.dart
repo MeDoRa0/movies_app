@@ -19,5 +19,5 @@ class MoviesModel extends MoviesDomainEntites {
         json['genre_ids'].map((e) => e),
       ),
       overview: json['overview'],
-      voteAverage: json['vote_average']);
+      voteAverage: json['vote_average'].toDouble());
 }

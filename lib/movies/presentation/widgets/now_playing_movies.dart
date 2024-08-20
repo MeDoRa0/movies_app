@@ -6,6 +6,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:movies_ca/core/utils/constants.dart';
 import 'package:movies_ca/core/utils/enums.dart';
 import 'package:movies_ca/movies/presentation/controller/bloc/movies_bloc.dart';
+import 'package:movies_ca/movies/presentation/screens/movie_detail_screen.dart';
 
 class NowPlayingMoviesWidget extends StatelessWidget {
   const NowPlayingMoviesWidget({
@@ -37,6 +38,12 @@ class NowPlayingMoviesWidget extends StatelessWidget {
                       key: const Key('openMovieMinimalDetail'),
                       onTap: () {
                         /// TODO : NAVIGATE TO MOVIE DETAILS
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) =>
+                                  MovieDetailScreen(id: item.id),
+                            ));
                       },
                       child: Stack(
                         children: [

@@ -26,7 +26,7 @@ class MoviesDomainEntites extends Equatable {
         backdropPath,
         genreIds,
         overview,
-        voteAverage,
+       // voteAverage,
         releaseDate,
       ];
 }

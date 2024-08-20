@@ -7,4 +7,18 @@ class AppConstants {
 //this code for the image of the movie
   static const String baseImageUrl = 'https://image.tmdb.org/t/p/w500';
   static String imageUrl(String path) => '$baseImageUrl$path';
+
+  static String movieDetailsPath(int movieId) =>
+      '$baseUrl/movie/$movieId?$apiKey';
+
+  static String similarMoviesPath(int movieId) =>
+      '$baseUrl/movie/$movieId/similar?$apiKey';
+
+  static const String onTheAirTvPath = '$baseUrl/tv/on_the_air?$apiKey';
+  static const String populerTvPath = '$baseUrl/tv/popular?$apiKey';
+  static const String topRatedTvPath = '$baseUrl/tv/top_rated?$apiKey';
+
+  static String tvDetailsPath(int seriesId) => '$baseUrl/tv/$seriesId?$apiKey';
+  static String similarTvPath(int seriesId) =>
+      '$baseUrl/tv/$seriesId/similar?$apiKey';
 }

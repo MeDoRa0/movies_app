@@ -7,7 +7,6 @@ import 'package:movies_ca/TV/domain/use%20case/get_tv_details_usecase.dart';
 import 'package:movies_ca/core/error/exeptions.dart';
 import 'package:movies_ca/core/network/error_message_model.dart';
 import 'package:movies_ca/core/utils/constants.dart';
-import 'package:movies_ca/movies/domain/use%20case/get_similer_movies_usecase.dart';
 
 abstract class BaseTvRemoteDataSource {
   Future<List<TvModel>> getOnTheAirTv();
@@ -21,6 +20,7 @@ class TvRemoteDataSource extends BaseTvRemoteDataSource {
   @override
   Future<List<TvModel>> getOnTheAirTv() async {
     final response = await Dio().get(AppConstants.onTheAirTvPath);
+    
     if (response.statusCode == 200) {
       return List<TvModel>.from(
         (response.data['results'] as List).map(

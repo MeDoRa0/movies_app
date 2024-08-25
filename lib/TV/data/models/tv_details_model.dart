@@ -7,7 +7,7 @@ class TvDetailsModel extends TvDetailsDomainEntites {
     required super.backDropPath,
     required super.overview,
     required super.voteAvrage,
-    required super.firtAirDate,
+    required super.firstAirDate,
     required super.seasonNumber,
     required super.episodeRunTime,
     required super.genres,
@@ -18,7 +18,7 @@ class TvDetailsModel extends TvDetailsDomainEntites {
         backDropPath: json['backdrop_path'],
         overview: json['overview'],
         voteAvrage: json['vote_average'].toDouble(),
-        firtAirDate: json['first_air_date'],
+        firstAirDate: json['first_air_date'],
         seasonNumber: json['season_number'],
         episodeRunTime: List<int>.from(
           json['episode_run_time'],

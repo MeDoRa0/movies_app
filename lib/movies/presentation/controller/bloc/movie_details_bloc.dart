@@ -13,7 +13,7 @@ part 'movie_details_state.dart';
 
 class MovieDetailsBloc extends Bloc<MovieDetailsEvent, MovieDetailsState> {
   MovieDetailsBloc(this.getMovieDetailsUsecase, this.getSimilerMoviesUsecase)
-      : super(MovieDetailsState()) {
+      : super(const MovieDetailsState()) {
     on<GetMovieDetailsEvent>(_getMovieDetails);
     on<GetSimilarMoviesEvent>(_getSimilarMovies);
   }

@@ -6,7 +6,7 @@ class TvDetailsDomainEntites extends Equatable {
   final String backDropPath;
   final String overview;
   final double voteAvrage;
-  final String firtAirDate;
+  final String firstAirDate;
   final String seasonNumber;
   final List<int> episodeRunTime;
   final List<TvGenresEntites> genres;
@@ -16,7 +16,7 @@ class TvDetailsDomainEntites extends Equatable {
     required this.backDropPath,
     required this.overview,
     required this.voteAvrage,
-    required this.firtAirDate,
+    required this.firstAirDate,
     required this.seasonNumber,
     required this.episodeRunTime,
     required this.genres,
@@ -29,7 +29,7 @@ class TvDetailsDomainEntites extends Equatable {
         backDropPath,
         overview,
         voteAvrage,
-        firtAirDate,
+        firstAirDate,
         seasonNumber,
         episodeRunTime,
         genres,

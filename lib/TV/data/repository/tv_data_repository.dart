@@ -8,7 +8,6 @@ import 'package:movies_ca/TV/domain/use%20case/get_similar_tv_usecase.dart';
 import 'package:movies_ca/TV/domain/use%20case/get_tv_details_usecase.dart';
 import 'package:movies_ca/core/error/exeptions.dart';
 import 'package:movies_ca/core/error/failuers.dart';
-import 'package:movies_ca/movies/domain/use%20case/get_similer_movies_usecase.dart';
 
 class TvDataRepository extends TvDomainRepository {
   final BaseTvRemoteDataSource baseTvRemoteDataSource;
